@@ -1,3 +1,4 @@
 def burger(patty, sauce, topping)
-  # TODO: code the `burger` method
+  agregar = (block_given? ? yield(patty) : patty)
+  ["bread", agregar, sauce, topping, "bread"]
 end
