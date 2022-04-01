@@ -1,5 +1,3 @@
-b_array = []
-
 def size_splitter(array, size)
   # TODO: Return an array of two arrays, the first containing
   #       words of length `size`, the second containing all the other words
