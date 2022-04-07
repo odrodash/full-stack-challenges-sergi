@@ -1,6 +1,7 @@
 # DO NOT remove the line below, written for display purpose
 require_relative "../spec/helper/board"
-
+require_relative "cow"
+require_relative "chicken"
 
 puts "\n\n"
 puts "📝 Day Three: Animals Talk"
@@ -16,16 +17,18 @@ puts "The male chicken says #{male_chicken.talk}"
 
 puts "\n\n"
 puts "📝 Day Four: Feed The Animals"
-# 1. Store all your animals in an `animals` array 
-
+# 1. Store all your animals in an `animals` array
+animals = [cow, female_chicken, male_chicken]
 
 # 2. Call the `feed!` method on each animal (use `each` on the array)
-
+animals.each do |animal|
+  animal.feed!
+end
 
 # 3. Replace the TODOs
-puts "The cow produced #{'TODO'} liters of milk"
-puts "The female chicken produced #{'TODO'} eggs"
-puts "The male chicken produced #{'TODO'} eggs"
+puts "The cow produced #{animals[0]} liters of milk"
+puts "The female chicken produced #{animals[1]} eggs"
+puts "The male chicken produced #{animals[2]} eggs"
 
 
 # DO NOT remove the line below, written for display purpose
