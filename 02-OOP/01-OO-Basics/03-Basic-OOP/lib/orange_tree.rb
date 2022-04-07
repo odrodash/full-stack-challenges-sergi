@@ -2,8 +2,8 @@ class OrangeTree
   attr_reader :age
   attr_accessor :fruits
   attr_reader :height
-  attr_reader :fruit_picker
-  attr_accessor :is_dead
+
+
 
   def initialize
     @age = 0
@@ -12,8 +12,6 @@ class OrangeTree
     @fruit_picker = 0
     @is_dead = false
   end
-
-
 
   def dead?
     return @is_dead
