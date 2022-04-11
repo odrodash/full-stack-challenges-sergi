@@ -1,4 +1,5 @@
 require "csv"
+require_relative "recipe"
 class Cookbook
   def initialize(csv_file_path)
     @csv_file = csv_file_path
