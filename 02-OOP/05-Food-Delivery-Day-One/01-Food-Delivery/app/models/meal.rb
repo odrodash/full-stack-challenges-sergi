@@ -7,10 +7,3 @@ class Meal
     @price = attributes[:price]
   end
 end
-
-platos = Meal.new(name: "majadito", price: 10)
-p platos
-puts "------------"
-p platos.name
-p platos.price
-p platos.id
