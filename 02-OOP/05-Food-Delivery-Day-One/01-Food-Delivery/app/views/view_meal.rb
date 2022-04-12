@@ -3,7 +3,7 @@ require_relative "../models/meal"
 class ViewMeal
   def display(meals)
     meals.each do |meal|
-      puts "#{meal.id}.- meal: #{meal.name}, price: #{meal.price}"
+      puts "#{meal.id}.- meal: #{meal.name}, price: #{meal.price}bs"
     end
   end
 
