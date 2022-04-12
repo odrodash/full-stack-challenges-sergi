@@ -26,6 +26,7 @@ class MealRepository
     end
   end
 
+privates
 
   def load
     @next_id = 0
