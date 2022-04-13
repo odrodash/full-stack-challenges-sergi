@@ -47,5 +47,3 @@ class EmployeeRepository
     next_id = @employees.empty? ? 1 : @employees.last.id + 1
   end
 end
- repo = EmployeeRepository.new("../data/employees.csv")
- p repo.all_riders
