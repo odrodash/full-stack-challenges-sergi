@@ -54,7 +54,7 @@ describe "OrdersController", :_order do
     [
       [ "id", "delivered", "meal_id", "customer_id", "employee_id" ],
       [ 1, true, 1, 1, 2 ],
-      [ 2, false, 1, 2, 2 ],
+      [ 2, false, 1, 2, 3 ],
       [ 3, false, 2, 3, 2 ],
       [ 4, false, 5, 2, 3 ]
     ]
@@ -83,7 +83,7 @@ describe "OrdersController", :_order do
 
       expect(order_repository.undelivered_orders.length).to eq(4)
       expect(order_repository.undelivered_orders[3].meal.name).to eq("Capricciosa")
-      expect(order_repository.undelivered_orders[3].employee.username).to eq("ringo")
+      expect(order_repository.undelivered_orders[3].employee.username).to eq("john")
       expect(order_repository.undelivered_orders[3].customer.name).to eq("John Bonham")
     end
   end

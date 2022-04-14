@@ -22,6 +22,10 @@ class OrderRepository
     @orders.reject { |order| order.delivered?}
   end
 
+  def mark_as_order(index)
+    @orders[index].deliver!
+    save_csv
+  end
   private
 
   def save_csv

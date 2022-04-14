@@ -1,9 +1,10 @@
 # TODO: implement the router of your app.
 class Router
-  def initialize(controller, customer_controller,session_controller)
+  def initialize(controller, customer_controller,session_controller, orders_controller)
     @controller = controller
     @controller_custom = customer_controller
     @session_controller = session_controller
+    @controller_order = orders_controller
     @running    = true
     @employee = true
   end
@@ -65,8 +66,8 @@ class Router
 
   def route_action_rider(action)
     case action
-    when 1 then @controller_order.mark_as_delivery
-    when 2 then @controller_order.list_my_orders
+    when 1 then @controller_order.mark_as_delivered(@employee)
+    when 2 then @controller_order.list_my_orders(@employee)
     when 3
       @running = false
     when 4
