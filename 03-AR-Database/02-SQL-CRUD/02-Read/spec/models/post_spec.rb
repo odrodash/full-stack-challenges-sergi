@@ -56,7 +56,7 @@ describe Post do
     before do
       DB.execute("INSERT INTO `posts` (title, url, votes) VALUES ('Hello world', 'https://www.lewagon.com', 10000)")
     end
-    
+
     it "should return a Post built with data from the database" do
       post = Post.find(1)
       expect(post).to_not be_nil
@@ -64,7 +64,7 @@ describe Post do
       expect(post.id).to eq 1
       expect(post.title).to eq 'Hello world'
     end
-    
+
     it "should return nil if post is not found in database" do
       expect(Post.find(42)).to be_nil
     end
@@ -80,7 +80,7 @@ describe Post do
     it "should return an array of Post built with data from the database" do
       DB.execute("INSERT INTO `posts` (title) VALUES ('Article 1')")
       DB.execute("INSERT INTO `posts` (title) VALUES ('Article 2')")
-      
+
       posts = Post.all
       expect(posts.length).to eq 2
       expect(posts).to be_a Array
