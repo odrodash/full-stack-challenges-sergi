@@ -1,5 +1,5 @@
 require 'query'
-require 'pry-byebug'
+
 
 
 DATABASE_PATH = File.join(File.dirname(__FILE__), '../lib/db/jukebox.sqlite')
