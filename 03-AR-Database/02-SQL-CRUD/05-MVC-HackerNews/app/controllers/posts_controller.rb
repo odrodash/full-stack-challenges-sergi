@@ -45,9 +45,10 @@ class PostsController
     index
     id = @view.ask_for_user("id")
     post = Post.find(id.to_i)
-    new_votes = @view.ask_for_user("new votes")
-    post.votes = new_votes
+    post.votes += 1
     post.save
+    index
+
   end
 
   private
