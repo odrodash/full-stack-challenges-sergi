@@ -3,11 +3,12 @@ require_relative "app/controllers/posts_controller"
 class Router
   def initialize
     @controller = PostsController.new
+    @running = true
   end
 
   def run
     print_welcome
-    loop do
+    while @running
       print_menu
       action = gets.chomp.to_i
       route_action(action)
@@ -23,7 +24,12 @@ class Router
     when 3 then @controller.update
     when 4 then @controller.destroy
     when 5 then @controller.upvote
+    when 6 then exit
     end
+  end
+
+  def exit
+    @running = false
   end
 
   def actions
@@ -32,7 +38,8 @@ class Router
       "Add a post",
       "Edit a post title & url",
       "Delete a post",
-      "Vote for a post"
+      "Vote for a post",
+      "Exit"
     ]
   end
 
