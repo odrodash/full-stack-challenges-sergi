@@ -1,0 +1,32 @@
+.notification {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-top: 2px;
+  padding: 8px 15px;
+}
+
+.notification-flex-item {
+  flex-grow: 1;
+}
+
+.notification h3 {
+  margin: 0;
+  color: #999999;
+  font-size: 15px;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.notification-opacity {
+  font-size: 15px;
+  color: #999999;
+  opacity: 0;
+}
+
+.notification:hover .notification-opacity {
+  opacity: 1;
+  transition: 0.4s;
+}

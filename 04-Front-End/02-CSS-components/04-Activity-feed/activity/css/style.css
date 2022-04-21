@@ -12,6 +12,7 @@ body {
   margin: 0;
   margin-bottom: 100px;
   font-family: "Open Sans", "Helvetica", "sans-serif";
+  background-color: #F7F7F7;
 }
 .text-center {
   text-align: center;
@@ -20,4 +21,3 @@ body {
   max-width: 900px;
   margin: 50px auto;
 }
-

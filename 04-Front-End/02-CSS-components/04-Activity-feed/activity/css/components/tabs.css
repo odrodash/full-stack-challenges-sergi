@@ -1,1 +1,25 @@
 /* Your tabs CSS code here */
+a {
+  text-decoration: none;
+  color: #268BD2;
+}
+
+.tabs {
+  list-style: none;
+  margin-bottom: 16px;
+  display: flex
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}
+
+.tab {
+  color: black;
+  cursor: pointer;
+  margin-right: 16px;
+  opacity: .4;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+}
