@@ -3,7 +3,11 @@
 
 /* Fontawesome */
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
-
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/container.css");
+@import url("components/cards.css");
+@import url("components/footer.css");
 /* Utilities */
 body {
   margin: 0;
@@ -19,4 +23,3 @@ a {
 }
 
 /* Custom design below! */
-

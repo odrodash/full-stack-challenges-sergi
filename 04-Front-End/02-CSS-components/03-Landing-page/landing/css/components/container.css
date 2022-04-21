@@ -1,0 +1,21 @@
+.container-banner {
+  color: white;
+  padding: 200px;
+}
+
+.container-banner p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: rgb(200,200,200);
+}
+
+.container-banner h2 {
+  margin: 0;
+}
+
+/* container works*/
+.container {
+  width: 900px;
+  margin: auto;
+}
