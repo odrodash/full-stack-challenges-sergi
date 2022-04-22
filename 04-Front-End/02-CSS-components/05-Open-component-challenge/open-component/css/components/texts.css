@@ -1,0 +1,12 @@
+#text-bold {
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card-content-small p {
+  color: rgb(0,0,0,0.5);
+  margin: 0;
+  margin-bottom: 35px;
+}

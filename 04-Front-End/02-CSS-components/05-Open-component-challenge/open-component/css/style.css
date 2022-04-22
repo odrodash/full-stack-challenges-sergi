@@ -4,6 +4,10 @@
 
 /* Components */
 /* @import url("components/name_of_component.css"); */
+@import url("components/button.css");
+@import url("components/images.css");
+@import url("components/texts.css");
+@import url("components/cards.css");
 
 
 body {
@@ -17,5 +21,7 @@ body {
 .container {
   max-width: 900px;
   margin: 50px auto;
+  background-color: rgb(240,240,240);
+  padding: 30px;
+  border-radius: 10px;
 }
-
