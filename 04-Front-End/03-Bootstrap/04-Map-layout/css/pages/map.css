@@ -3,4 +3,13 @@
 /* We just give you a Gmaps with random width/height */
 #map {
   width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding-left: 10px;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
 }
