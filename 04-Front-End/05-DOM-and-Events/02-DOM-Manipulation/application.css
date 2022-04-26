@@ -1,6 +1,9 @@
 .blue {
   color: blue;
 }
+.background-8 {
+  background-color: rgb(221, 244, 255);
+}
 
 .error, .success {
   padding: 0.5em;
