@@ -1,6 +1,6 @@
 def word_contains_two_p(sentence)
   # TODO: return the first word in `sentence` containing two 'p's
-  regexp = /YOUR_REGEXP/
+  regexp = /\S*(\w*p\w*p\w)\S*/
   sentence.match(regexp)[0]
 end
 

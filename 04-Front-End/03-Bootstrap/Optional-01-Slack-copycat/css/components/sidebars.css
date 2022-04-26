@@ -1,0 +1,18 @@
+.container-sidebar {
+  background-color: black;
+  padding: 16px;
+  text-align: center;
+  color: whitesmoke;
+  height: 924px;
+}
+
+.container-sidebar h2 {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.container-sidebar h2:hover {
+  background-color: #514951;
+}

@@ -65,11 +65,8 @@ img {
 .list-inline > li {
   display: inline-block;
   padding: 10px;
-}
-
-.list-inline i {
-    font-size: 50px;
-    color: rgb(230, 230, 230);
+  font-size: 50px;
+  color: rgb(230, 230, 230);
 }
 
 .fa-brands:hover {
