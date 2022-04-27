@@ -17,3 +17,8 @@ body {
   font-size: 24px;
   padding: 0 4px;
 }
+
+.decoration {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
