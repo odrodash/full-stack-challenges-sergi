@@ -4,7 +4,6 @@ const baseUrl = "https://wagon-chat.herokuapp.com/:channel/messages";
 // Your turn to code!
 
 const refresh = document.querySelector('#refresh');
-const li = document.querySelector('.list-unstyled');
 const h1 = document.querySelector('h1');
 let count = 0;
 
@@ -35,6 +34,7 @@ const messagePost = () => {
 };
 
 const form = document.querySelector("#comment-form");
+const li = document.querySelector('.list-unstyled');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
